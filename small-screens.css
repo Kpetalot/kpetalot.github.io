@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+	#general-info {
+		margin: 70px auto;
+		flex-direction: column;
+	}
+
+	#about-me-text {
+		font-size: 20px;
+		padding: 60px;
+		padding-top: 0;
+	}
+}

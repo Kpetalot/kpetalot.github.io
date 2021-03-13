@@ -1,0 +1,272 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	border: 0;
+	top: 0;
+}
+
+			/* MAIN */
+#main {
+	color: #fff;
+	 background-position: center;
+	background-size: cover;
+	background-image:linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4) ), url("../images/ezgif.com-gif-maker.webp");
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	text-align: center;
+	
+}
+#main-text {
+	text-transform: uppercase;
+}
+
+.intro {
+	font-weight: 550;
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+
+.intro span {
+	display: block;
+}
+
+#greetings {
+	position: relative;
+	animation: text 2s 1;
+}
+
+@keyframes text {
+	0% {
+		color: transparent;
+		margin-bottom: -40px;
+	}
+	30% {
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85% {
+		margin-bottom: -40px;
+	}
+}
+
+#name {
+	font-weight: 600;
+	font-size: 65px;
+	animation: opacity 2s 1;
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	95% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#main-text button {
+	background-color: rgb(79, 117, 201);
+	padding: 12px 32px;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 17px;
+	cursor: pointer;
+}
+#main-text button:hover {
+	background-color: rgba(79, 117, 201, 0.9);
+}
+/* .details {
+	font-size: 23px;
+	font-weight: 550;
+}
+
+.details p {
+	margin-top: -5px;
+} */
+
+			/* ABOUT-ME */
+#about-me {
+	min-height: 70vh;
+	font-size: 22px;
+	border-top: 1px solid #D5D5D5;
+}
+#about-me h2{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 40px;
+	text-transform: capitalize;
+}
+
+#about-me > p {
+	text-align: center;
+}
+#general-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 80%;
+	margin: 100px auto;
+	font-size: 20px;
+	text-align: center;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+}
+#general-info figcaption {
+	margin-top: 20px;
+}
+#general-info .title {
+	font-weight: 600;
+}
+#general-info figcaption p {
+	font-size: 17px;
+	font-weight: 500;
+	color: #485455;
+}
+#about-me-text {
+	position: relative;
+	padding: 120px;
+	padding-top: 0px;
+	margin: auto;
+	line-height: 2em;
+	align-self: center;
+}
+#about-me-text p{
+	color: #485455;
+	margin-top: 50px;
+}
+
+			/* FOOTER */
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient( rgba(79, 117, 201, 1 ),rgba(0, 0, 0, 0.8) );
+	padding: 5%;
+	color: #fff;
+	top: 0;
+	bottom: 0;
+	min-height: 82.4vh;
+
+}
+#email, #connect {
+	text-align: center;
+}
+footer h3 {
+	font-size: 2em;
+}
+#connect {
+	margin-top: 150px;
+	left: 30px;
+}
+footer .fa {
+	padding: 15px;
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+footer .fa:hover {
+	color: #D5D5D5;
+}
+#email h3 {
+	margin-bottom: 40px;
+}
+
+#email-adress {
+	margin: 15px 0px;
+}
+.email_img {
+	position: relative;
+	width: 250px;
+	/*text-align: center;*/
+	left: 11px;
+	margin: 0 auto;
+}
+.email_img img {
+	position: relative;
+	display: inline-block;
+	left: 2px;
+ 	top: 10px;
+ 	opacity: 0;
+ 	transition: all 0.4s;
+ 	cursor: pointer;
+
+}
+.email_img:hover img {
+	opacity: 1;
+	transform: translate3d(5px, 0, 0);
+  -webkit-transform: translate3d(5px, 0, 0);
+}
+
+#arrow-to-top {
+  position: fixed;
+  width: 3.41428571em;
+  height: 3.41428571em;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  right: 1.85714286em;
+  bottom: 3.71428571em;
+  padding-top: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+  z-index: 99;
+  border: 1px solid #ececec;
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  outline: none;
+}
+#arrow-to-top .fa {
+	color: #3A65C4FF;
+	position: relative;
+	bottom: 22px;
+	right: 9px;
+}
+#arrow-to-top:not(.active) {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  -webkit-transform: translate3d(0, 20px, 0);
+  /*pointer-events: none;*/
+}
+#arrow-to-top.active:hover {
+	cursor: pointer;
+  transform: translate3d(0, -3px, 0);
+  -webkit-transform: translate3d(0, -3px, 0);
+}
+
+.arrowDown {
+  color: white;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  animation: down 2s ease infinite;
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
