@@ -1,4 +1,7 @@
 @media (max-width: 600px) {
+	#name {
+		font-size: 55px;
+	}
 	#general-info {
 		margin: 70px auto;
 		flex-direction: column;
