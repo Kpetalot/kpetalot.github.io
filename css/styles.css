@@ -79,16 +79,17 @@ body, html {
 }
 
 #main-text button {
-	background-color: rgb(79, 117, 201);
+	background-color: rgb(44 122 142);
 	padding: 12px 32px;
 	border: 0;
 	border-radius: 4px;
 	color: #fff;
 	font-size: 17px;
 	cursor: pointer;
+	box-shadow: 5px 5px 15px #000;
 }
 #main-text button:hover {
-	background-color: rgba(79, 117, 201, 0.9);
+	background-color: rgba(44, 122, 142, 0.9);
 }
 /* .details {
 	font-size: 23px;
@@ -159,7 +160,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient( rgba(79, 117, 201, 1 ),rgba(0, 0, 0, 0.8) );
+	background: linear-gradient( rgba(44, 122, 142, 1 ),rgba(0, 0, 0, 0.8) );
 	padding: 5%;
 	color: #fff;
 	top: 0;
