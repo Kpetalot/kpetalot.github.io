@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+  #general-info {
+    margin: 70px auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-me-text {
+    font-size: 20px;
+    padding: 60px;
+    padding-top: 0;
+  }
+}
+/*# sourceMappingURL=small-screens.css.map */

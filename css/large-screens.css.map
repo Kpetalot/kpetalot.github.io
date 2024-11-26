@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,MAAM,OAAO,SAAS,EAAE,MAAM;EAChD,AAAA,cAAc,CAAC;IACd,WAAW,EAAE,KAAK;GAClB;EAED,AAAA,cAAc,CAAC;IACd,MAAM,EAAE,GAAG;GACX;EAED,AAAA,cAAc,CAAC;IACd,KAAK,EAAE,GAAG;GACV",
+    "sources": [
+        "large-screens.scss"
+    ],
+    "names": [],
+    "file": "large-screens.css"
+}
