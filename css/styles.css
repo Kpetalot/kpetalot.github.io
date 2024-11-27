@@ -428,10 +428,6 @@ footer .footer__section {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;              /* Centers the content */
-  justify-content: center;    /* Horizontally centers */
-  align-items: center;        /* Vertically centers */
-  flex-direction: column;     /* Stacks items vertically */
 }
 
 footer .footer__section a {
@@ -445,20 +441,13 @@ footer .footer__section .no-margin {
 
 footer .footer__section__column {
   text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding: 5em 0em;
-  margin: 0 auto; /* Keeps it centered */
-  display: flex; /* Flexbox for alignment */
-  flex-direction: column; /* Stacks items vertically */
-  align-items: center; /* Centers items */
-  gap: 1em; /* Space between elements */
 }
 
 @media (max-width: 768px) {
-  footer .footer__section {
-    flex-direction: column; /* Stacks everything vertically */
-    padding: 2em; /* Adjust padding for smaller screens */
-  }
-
   footer .footer__section__column {
     padding: 3em;
   }
@@ -495,9 +484,14 @@ footer .footer__section__column--title h3 {
 }
 
 footer .footer__section__column--body--social .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center icons in the row */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 85%;
   margin: 0 auto;
 }
@@ -515,6 +509,7 @@ footer .footer__section__column--body--social i {
 footer .footer__section__column--body i {
   font-size: 2.3rem;
   color: #fff;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-right: 0.2em;
 }
@@ -524,11 +519,16 @@ footer .footer__section__column--body i:hover {
 }
 
 footer .footer__section__column--body .email-box span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
 
 #arrow-to-top {
   position: fixed;
