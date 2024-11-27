@@ -317,7 +317,7 @@ section h3 {
 .timeline-dot{
 	height: 16px;
 	width: 16px;
-	background-color: #eaa023;
+	background-color: #007faa;
 	position: absolute;
 	left: calc(50% - 8px);
 	border-radius: 50%;
@@ -325,7 +325,7 @@ section h3 {
 }
 .timeline-date{
 	font-size: 18px;
-	color: #eaa023;
+	color: #007faa;
 	margin:6px 0 15px;
 }
 .timeline-content{
