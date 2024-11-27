@@ -365,69 +365,201 @@ section h3 {
 	}
 }
 
-		<footer id="contact">
-			<div class="footer__section">
-				<div class="row no-margin">
-					<div class="col-12">
-						<div class="row no-margin">
-							<div class="footer__section__column col-12 col-md-6 col-lg-4">
-								<div class="footer__section__column--title">
-									<h3>You can connect with me at the following places:</h3>
-								</div>
-								<div class="footer__section__column--body">
-									<div class="footer__section__column--body--social">
-										<div class="row">
+/* FOOTER */
+footer {
+  background-color: #0B0C0D;
+  color: #fff;
+}
 
-											<!-- Twitter -->
-											<div class="col-auto">
-												<a href="https://x.com/Kpetalot" data-toggle="tooltip" title="Twitter"
-													target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-											</div>
+footer .footer__section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-											<!-- LinkedIn -->
-											<div class="col-auto">
-												<a href="https://linkedin.com/in/konstantinos-petalotis" data-toggle="tooltip"
-													title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-											</div>
+footer .footer__section a {
+  text-decoration: none;
+  border-bottom: 0;
+}
 
-											<!-- Github -->
-											<div class="col-auto">
-												<a href="https://github.com/kpetalot" data-toggle="tooltip" title="GitHub" target="_blank"
-													rel="noopener"><i class="fab fa-github"></i></a>
-											</div>
+footer .footer__section .no-margin {
+  margin: 0;
+}
 
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="footer__section__column col-12 col-md-6 col-lg-4">
-								<div class="footer__section__column--title" style="width:110%;">
-									<h3>If you prefer email me at:</h3>
-								</div>
-								<div class="footer__section__column--body">
+footer .footer__section__column {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 5em 0em;
+}
 
-									<!-- Email -->
-									<div class="col-12 col-md email-box" style="margin-left: 14px;">
-										<span>
-											<i class="fas fa-envelope"></i>
-											<a href="https://mail.google.com/mail/?view=cm&fs=1&to=kpetalot@gmail.com"
-												data-toggle="tooltip" title="Email" target="_blank" rel="noopener">kpetalot@gmail.com
-											</a>
-										</span>
-									</div>
-								</div>
+@media (max-width: 768px) {
+  footer .footer__section__column {
+    padding: 3em;
+  }
+}
 
-							</div>
-								<div class="footer__section__column--body">
+@media (max-width: 576px) {
+  footer .footer__section__column {
+    padding: 3em 3em;
+  }
+}
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- Arrow navigating to the top of the page -->
-		<button data-scroll-class='100vh:active' id="arrow-to-top" name='go to top'><i class="fas fa-angle-up"></i></button>
+@media (max-width: 372px) {
+  footer .footer__section__column {
+    padding: 3em 1em;
+  }
+}
 
-	</div>
+footer .footer__section__column.meeting {
+  margin-top: 0;
+}
+
+footer .footer__section__column--title {
+  margin-bottom: 1.3em;
+}
+
+@media (max-width: 576px) {
+  footer .footer__section__column--title {
+    margin-bottom: 1em;
+  }
+}
+
+footer .footer__section__column--title h3 {
+  font-size: 1.3rem;
+}
+
+footer .footer__section__column--body--social .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+
+footer .footer__section__column--body--social i {
+  margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  footer .footer__section__column--body--social i {
+    margin-right: 0;
+  }
+}
+
+footer .footer__section__column--body i {
+  font-size: 2.3rem;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-right: 0.2em;
+}
+
+footer .footer__section__column--body i:hover {
+  color: #1544c0;
+}
+
+footer .footer__section__column--body .email-box span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#arrow-to-top {
+  position: fixed;
+  width: 3.41428571em;
+  height: 3.41428571em;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  right: 1.85714286em;
+  bottom: 3.71428571em;
+  padding-top: 12px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+  z-index: 99;
+  border: 1px solid #ececec;
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  outline: none;
+  border: 1px solid #1A1D20;
+}
+
+@media (max-width: 768px) {
+  #arrow-to-top {
+    width: 2.91428571em;
+    height: 2.91428571em;
+  }
+}
+
+#arrow-to-top .fas {
+  color: #1A1D20;
+  position: relative;
+  bottom: 17.4px;
+  right: 4.3px;
+  padding: 15px;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  #arrow-to-top .fas {
+    right: 0.27em;
+    bottom: 0.7em;
+  }
+}
+
+#arrow-to-top:not(.active) {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  -webkit-transform: translate3d(0, 20px, 0);
+  /*pointer-events: none;*/
+}
+
+#arrow-to-top.active:hover {
+  cursor: pointer;
+  transform: translate3d(0, -3px, 0);
+  -webkit-transform: translate3d(0, -3px, 0);
+}
+
+@keyframes fadein-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/* Internet Explorer */
+/*# sourceMappingURL=styles.css.map */
