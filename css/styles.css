@@ -492,7 +492,7 @@ footer .footer__section__column--body--social .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-around;
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
 }
 
