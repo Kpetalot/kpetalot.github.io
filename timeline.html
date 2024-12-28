@@ -1,159 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title> Timeline </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/timeline.css">
-  <link rel="stylesheet" href="css/styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#2E2E2E">
+	<meta name="description" content="Personal website of Konstantinos Petalotis">
+	<title>Timeline - Konstantinos Petalotis</title>
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="preconnect prefetch">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/timeline.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Jqeury -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
+	<div class="main">
+		<div class="landing_page">
+			<nav class="navbar navbar-expand-lg fadeIn-down">
 
-		<div class="main">
-			<div class="landing_page">
-				<nav class="navbar navbar-expand-lg fadeIn-down">
+				<button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse"
+					data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation" styles="color: white;">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navigation">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="timeline.html">Timeline</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="main__section">
 
-					<button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse"
-						data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false"
-						aria-label="Toggle navigation" styles="color: white;">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navigation">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="index.html">Back</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#certifications">Achievements</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="timeline.html">Timeline</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact">Contact</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-				<div class="main__section">
+				<style>
+					a {
+						color: #007faa;
+						/* Default link color */
+						text-decoration: none;
+						/* Remove underline */
+					}
 
-<style>
-  a {
-    color: #007faa; /* Default link color */
-    text-decoration: none; /* Remove underline */
-  }
+					a:hover {
+						color: #00a8e1;
+						/* Darker blue on hover */
+					}
+				</style>
 
-  a:hover {
-    color: #00a8e1; /* Darker blue on hover */
-  }
-</style>
-
-<section class="timeline-section">
-	<div class="timeline-items">
-		<div class="timeline-item">
-			<div class="timeline-dot"></div>
-			<div class="timeline-date">2016 - 2020</div>
-			<div class="timeline-content">
-				<h3><b>BSc, Economics</b></h3>
-				<h4><a href="https://www.auth.gr/en/" target="_blank">Aristotle University of Thessaloniki, Greece</a></h4>
-				<p>Major: Business Administration</p>
-			</div>
-		</div>
-		<div class="timeline-item">
-			<div class="timeline-dot"></div>
-			<div class="timeline-date">2020 - 2021</div>
-			<div class="timeline-content">
-				<h3>Μandatory military obligations</h3>
-				<p>Served my mandatory military obligations as a Greek citizen</p>
-			</div>
-		</div>
-		<div class="timeline-item">
-			<div class="timeline-dot"></div>
-			<div class="timeline-date">2021 - 2023</div>
-			<div class="timeline-content">
-				<h3><b>Digital Marketing Manager</b></h3>
-				<h4><a href="https://www.hcn.gr/el/" target="_blank">HCN</a></h4>
-				<p align="left">• Develop, implement, and analyze digital marketing strategies</p>
-				<p align="left">• Management of the company’s social media</p>
-				<p align="left">• Google Ads & Google Analytics analyses</p>
-				<p align="left">• Build and measure advertising campaigns</p>
-			</div>
-		</div>
-		<div class="timeline-item">
-			<div class="timeline-dot"></div>
-			<div class="timeline-date">2023 - 2024</div>
-			<div class="timeline-content">
-				<h3><b>MSc, Data Science & Marketing Analytics</b></h3>
-				<h4><a href="https://www.rug.nl/?lang=en" target="_blank">University of Groningen, Netherlands</a></h4>
-				<p>Thesis: Predictive Modeling for Environmental Concern Using Machine Learning Techniques</p>
-		</div>
-		</div>
-	</div>
-</section>
-
-</body>
-			
-		<footer id="contact">
-			<div class="footer__section">
-				<div class="row no-margin">
-					<div class="col-12">
-						<div class="row no-margin">
-							<div class="footer__section__column col-12 col-md-6">
-								<div class="footer__section__column--title">
-									<h3>You can connect with me at the following places:</h3>
-								</div>
-								<div class="footer__section__column--body">
-									<div class="footer__section__column--body--social">
-										<div class="row">
-
-											<!-- Twitter -->
-											<div class="col-auto">
-												<a href="https://x.com/Kpetalot" data-toggle="tooltip" title="Twitter"
-													target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-											</div>
-
-											<!-- LinkedIn -->
-											<div class="col-auto">
-												<a href="https://linkedin.com/in/konstantinos-petalotis" data-toggle="tooltip"
-													title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-											</div>
-
-											<!-- Github -->
-											<div class="col-auto">
-												<a href="https://github.com/kpetalot" data-toggle="tooltip" title="GitHub" target="_blank"
-													rel="noopener"><i class="fab fa-github"></i></a>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="footer__section__column col-12 col-md-6">
-								<div class="footer__section__column--title" style="width:110%;">
-									<h3>If you prefer email me at:</h3>
-								</div>
-								<div class="footer__section__column--body">
-
-									<!-- Email -->
-									<div class="col-12 col-md email-box" style="margin-left: 14px;">
-										<span>
-											<i class="fas fa-envelope"></i>
-											<a href="https://mail.google.com/mail/?view=cm&fs=1&to=kpetalot@gmail.com"
-												data-toggle="tooltip" title="Email" target="_blank" rel="noopener">kpetalot@gmail.com
-											</a>
-										</span>
-									</div>
-								</div>
-
+				<section class="timeline-section">
+					<div class="timeline-items">
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-date">2016 - 2020</div>
+							<div class="timeline-content">
+								<h3><b>BSc, Economics</b></h3>
+								<h4><a href="https://www.auth.gr/en/" target="_blank">Aristotle University of Thessaloniki, Greece</a>
+								</h4>
+								<p>Major: Business Administration</p>
 							</div>
 						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-date">2020 - 2021</div>
+							<div class="timeline-content">
+								<h3>Μandatory military obligations</h3>
+								<p>Served my mandatory military obligations as a Greek citizen</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-date">2021 - 2023</div>
+							<div class="timeline-content">
+								<h3><b>Digital Marketing Manager</b></h3>
+								<h4><a href="https://www.hcn.gr/el/" target="_blank">HCN</a></h4>
+								<p align="left">• Develop, implement, and analyze digital marketing strategies</p>
+								<p align="left">• Management of the company’s social media</p>
+								<p align="left">• Google Ads & Google Analytics analyses</p>
+								<p align="left">• Build and measure advertising campaigns</p>
+							</div>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-date">2023 - 2024</div>
+							<div class="timeline-content">
+								<h3><b>MSc, Data Science & Marketing Analytics</b></h3>
+								<h4><a href="https://www.rug.nl/?lang=en" target="_blank">University of Groningen, Netherlands</a></h4>
+								<p>Thesis: Predictive Modeling for Environmental Concern Using Machine Learning Techniques</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+</body>
+
+<footer id="contact">
+	<div class="footer__section">
+		<div class="row no-margin">
+			<div class="col-12">
+				<div class="row no-margin">
+					<div class="footer__section__column col-12 col-md-6">
+						<div class="footer__section__column--title">
+							<h3>You can connect with me at the following places:</h3>
+						</div>
+						<div class="footer__section__column--body">
+							<div class="footer__section__column--body--social">
+								<div class="row">
+
+									<!-- Twitter -->
+									<div class="col-auto">
+										<a href="https://x.com/Kpetalot" data-toggle="tooltip" title="Twitter" target="_blank"
+											rel="noopener"><i class="fab fa-twitter"></i></a>
+									</div>
+
+									<!-- LinkedIn -->
+									<div class="col-auto">
+										<a href="https://linkedin.com/in/konstantinos-petalotis" data-toggle="tooltip" title="LinkedIn"
+											target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+									</div>
+
+									<!-- Github -->
+									<div class="col-auto">
+										<a href="https://github.com/kpetalot" data-toggle="tooltip" title="GitHub" target="_blank"
+											rel="noopener"><i class="fab fa-github"></i></a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__section__column col-12 col-md-6">
+						<div class="footer__section__column--title" style="width:110%;">
+							<h3>If you prefer email me at:</h3>
+						</div>
+						<div class="footer__section__column--body">
+
+							<!-- Email -->
+							<div class="col-12 col-md email-box" style="margin-left: 14px;">
+								<span>
+									<i class="fas fa-envelope"></i>
+									<a href="https://mail.google.com/mail/?view=cm&fs=1&to=kpetalot@gmail.com" data-toggle="tooltip"
+										title="Email" target="_blank" rel="noopener">kpetalot@gmail.com
+									</a>
+								</span>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
-	</footer>
-		<!-- Arrow navigating to the top of the page -->
-		<button data-scroll-class='100vh:active' id="arrow-to-top" name='go to top'><i class="fas fa-angle-up"></i></button>
-
 	</div>
+	</div>
+</footer>
+<!-- Arrow navigating to the top of the page -->
+<button data-scroll-class='100vh:active' id="arrow-to-top" name='go to top'><i class="fas fa-angle-up"></i></button>
+
+</div>
+
 </html>
